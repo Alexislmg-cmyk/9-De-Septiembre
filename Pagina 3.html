@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina3">
+
+        <!-- NEBLINA -->
+        <div class="neblina neblina1"></div>
+        <div class="neblina neblina2"></div>
+        <div class="neblina neblina3"></div>
+
+        <!-- LETRAS K -->
+        <div class="contenedor-k" id="contenedorK"></div>
+
+        <!-- CANDADO CORAZÓN -->
+        <div class="candado-corazon" id="candadoCorazon">
+
+            <svg class="svg-candado" viewBox="0 0 220 230">
+
+                <!-- Seguro -->
+                <path
+                    class="arco-svg"
+                    d="M75 85 V55
+                       C75 18 145 18 145 55
+                       V85"
+                />
+
+                <!-- Corazón -->
+                <path
+                    class="corazon-svg"
+                    d="M110 205
+                       L35 130
+                       C5 100 12 55 45 40
+                       C70 28 95 40 110 60
+                       C125 40 150 28 175 40
+                       C208 55 215 100 185 130
+                       Z"
+                />
+
+                <!-- Cerradura -->
+                <circle
+                    class="llave-circulo"
+                    cx="110"
+                    cy="112"
+                    r="13"
+                />
+
+                <rect
+                    class="llave-palo"
+                    x="105"
+                    y="120"
+                    width="10"
+                    height="30"
+                    rx="5"
+                />
+
+            </svg>
+
+        </div>
+
+
+        <!-- MENSAJE DESPUÉS DE LOS 3 TOQUES -->
+        <section class="zona-password" id="zonaPassword">
+
+            <p class="mensaje-candado" id="mensajeCandado">
+                No iba a ser tan facil abrirlo mi vida
+            </p>
+
+            <div class="password-container">
+
+                <div class="cuadritos-password" id="cuadritosPassword">
+
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+                    <input type="text" maxlength="1" inputmode="numeric">
+
+                </div>
+
+                <button id="botonComprobar">
+                    ABRIR
+                </button>
+
+                <p class="mensaje-error" id="mensajeError"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AQUÍ DESPUÉS PONDREMOS LO QUE PASA AL ACERTAR -->
+
+        <section class="despues-password" id="despuesPassword">
+
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
